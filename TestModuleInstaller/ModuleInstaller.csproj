@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProjectGuid>{75EF2F6B-44C6-490B-8375-74A213BD2C0F}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>ModuleInstaller</RootNamespace>
+    <AssemblyName>ModuleInstaller</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug</OutputPath>
+    <DefineConstants>DEBUG;</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ExternalConsole>true</ExternalConsole>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ExternalConsole>true</ExternalConsole>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ConsoleOutputWriter.cs" />
+    <Compile Include="Modules\Module.cs" />
+    <Compile Include="Modules\ModulesDependencyMap.cs" />
+    <Compile Include="Modules\ModulesDependencyMapGenerator.cs" />
+    <Compile Include="Modules\Exceptions\ModuleContainsCycleException.cs" />
+    <Compile Include="Modules\Exceptions\ModuleDuplicateException.cs" />
+    <Compile Include="Modules\Exceptions\ModuleExceptionBase.cs" />
+    <Compile Include="Modules\Interfaces\IModule.cs" />
+    <Compile Include="Types\ConsoleReturnTypes.cs" />
+    <Compile Include="Modules\Interfaces\IDependencyMap.cs" />
+    <Compile Include="Modules\Interfaces\IDependencyMapGenerator.cs" />
+    <Compile Include="Modules\Interfaces\IOutputWriter.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+</Project>

@@ -1,0 +1,29 @@
+
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ModuleInstaller", "ModuleInstaller\ModuleInstaller.csproj", "{75EF2F6B-44C6-490B-8375-74A213BD2C0F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestCourseInstaller", "TestCourseInstaller\TestCourseInstaller.csproj", "{96C47C2B-3107-4B29-B142-C5498A49B7D2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestModuleInstaller", "TestModuleInstaller\TestModuleInstaller.csproj", "{12E0CF9C-6523-4C06-948D-4A76F237E187}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x86 = Debug|x86
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{75EF2F6B-44C6-490B-8375-74A213BD2C0F}.Debug|x86.ActiveCfg = Debug|x86
+		{75EF2F6B-44C6-490B-8375-74A213BD2C0F}.Debug|x86.Build.0 = Debug|x86
+		{75EF2F6B-44C6-490B-8375-74A213BD2C0F}.Release|x86.ActiveCfg = Release|x86
+		{75EF2F6B-44C6-490B-8375-74A213BD2C0F}.Release|x86.Build.0 = Release|x86
+		{96C47C2B-3107-4B29-B142-C5498A49B7D2}.Debug|x86.ActiveCfg = Debug|x86
+		{96C47C2B-3107-4B29-B142-C5498A49B7D2}.Debug|x86.Build.0 = Debug|x86
+		{96C47C2B-3107-4B29-B142-C5498A49B7D2}.Release|x86.ActiveCfg = Release|x86
+		{96C47C2B-3107-4B29-B142-C5498A49B7D2}.Release|x86.Build.0 = Release|x86
+		{12E0CF9C-6523-4C06-948D-4A76F237E187}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{12E0CF9C-6523-4C06-948D-4A76F237E187}.Debug|x86.Build.0 = Debug|Any CPU
+		{12E0CF9C-6523-4C06-948D-4A76F237E187}.Release|x86.ActiveCfg = Release|Any CPU
+		{12E0CF9C-6523-4C06-948D-4A76F237E187}.Release|x86.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
